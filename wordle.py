@@ -15,4 +15,5 @@ for i in range(0, len(y)):
     else:
         continue
 
-print(words)
+for word in words:
+    print(word)
