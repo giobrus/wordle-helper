@@ -20,9 +20,17 @@ while True:
     else:
         black.append(letter)
 
+yellow = []
+while True:
+    letter = input("input a yellow letter")  # to exit the loop, press empty enter
+    if letter == "":
+        break
+    else:
+        yellow.append(letter)
+
 for i in range(0, len(green)):
     if green[i] != "":
-        words = [x for x in words if x[i] == green[i] and set(x).isdisjoint(black)]
+        words = [x for x in words if x[i] == green[i] and set(x).isdisjoint(black) and set(yellow).issubset(x)]
     else:
         continue
 
