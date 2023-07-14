@@ -14,7 +14,7 @@ for i in range(0, len(green)):
 #     black[i] = input("black letter number "+str(i+1)+": ")
 black = []
 while True:
-    letter = input("input a black letter")  # to exit the loop, press empty enter
+    letter = input("input a black letter: ")  # to exit the loop, press empty enter
     if letter == "":
         break
     else:
@@ -22,7 +22,7 @@ while True:
 
 yellow = []
 while True:
-    letter = input("input a yellow letter")  # to exit the loop, press empty enter
+    letter = input("input a yellow letter: ")  # to exit the loop, press empty enter
     if letter == "":
         break
     else:
